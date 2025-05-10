@@ -1,0 +1,10 @@
+.mainWrap {
+  display: flex;
+  gap: 20px;
+  background-image: url("../assets/mainBg.webp");
+}
+.container{
+  max-width: 1216px;
+  padding: 10px;
+  margin: 0 auto;
+}

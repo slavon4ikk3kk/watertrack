@@ -1,0 +1,44 @@
+.main {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.editBlock {
+  display: flex;
+  gap: 12px;
+}
+.normaBlock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 12px;
+  width: 164px;
+  border: 1px solid #ECF2FF;
+  box-shadow: 0px 4px 8px 0px #9EBBFF1F;
+  border-radius: 10px;
+}
+.buttonEdit {
+  background-color: transparent;
+  border: none;
+  color: #8baeff;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.normaAmount {
+  color: #407bff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+.bottleImg {
+  width: 100%;
+  height: auto;
+}
+.normaTitle{
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 24px;
+     margin-bottom: 12px;
+}

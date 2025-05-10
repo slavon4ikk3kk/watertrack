@@ -1,0 +1,9 @@
+.mainRight {
+  background-color: gray;
+  height: 100%;
+  width: 592px;
+  flex-shrink: 0;
+}
+.p {
+  height: 600px;
+}
