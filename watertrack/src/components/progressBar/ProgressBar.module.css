@@ -1,96 +1,92 @@
 .progressBar {
-    height: 8px;
-    background-color: #d7e3ff;
-    border-radius: 10px;
-    position: relative;
+  height: 8px;
+  background-color: #d7e3ff;
+  border-radius: 10px;
+  position: relative;
 }
 
 .track {
-    background-color: #9ebbff;
-    height: 8px;
-    border-radius: 10px;
-    position: relative;
-    top: 0;
-    left: 0;
+  background-color: #9ebbff;
+  height: 8px;
+  border-radius: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .circle {
-    width: 14px;
-    height: 14px;
-    border: 1px solid #407bff;
-    border-radius: 50%;
-    background-color: #ffffff;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(50%, -50%);
+  width: 14px;
+  height: 14px;
+  border: 1px solid #407bff;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
 }
 
 .today {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 0%;
-    color: #407bff;
-    padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #407bff;
+  padding-bottom: 16px;
 }
 
 .statsStart {
-    position: absolute;
-    top: 20px;
-    left: -10px;
-    color: #407BFF;
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    letter-spacing: 0;
-    
-
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  color: #407bff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0;
 }
 
 .statsEnd {
-    position: absolute;
-    top: 20px;
-    right: -20px;
-    color: #407BFF;
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    letter-spacing: 0;
-    
-
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  color: #407bff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0;
 }
 
 .percentage {
-    color: #407BFF;
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-    letter-spacing: 0;
-    text-align: center;
+  color: #407bff;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: center;
 }
 
 .statsStart::before,
 .statsEnd::before,
 .percentage::before {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 8px;
-    background-color: #d7e3ff;
-    position: absolute;
-    top: -9px;
-    left: 50%;
-    transform: translateX(-50%);
+  content: "";
+  display: block;
+  width: 1px;
+  height: 8px;
+  background-color: #d7e3ff;
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .percentage::before {
-    top: -6px;
+  top: -6px;
 }
