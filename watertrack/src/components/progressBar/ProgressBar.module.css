@@ -1,45 +1,62 @@
 .progressBar {
-  height: 8px;
-  background-color: #d7e3ff;
-  border-radius: 10px;
-  position: relative;
+    height: 8px;
+    background-color: #d7e3ff;
+    border-radius: 10px;
+    position: relative;
 }
+
 .track {
-  background-color: #9ebbff;
-  height: 8px;
-  border-radius: 10px;
-  position: relative;
-  top: 0;
-  left: 0;
+    background-color: #9ebbff;
+    height: 8px;
+    border-radius: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
 }
+
 .circle {
-  width: 14px;
-  height: 14px;
-  border: 1px solid #407bff;
-  border-radius: 50%;
-  background-color: #ffffff;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(50%, -50%);
+    width: 14px;
+    height: 14px;
+    border: 1px solid #407bff;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
 }
+
 .today {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  color: #407bff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #407bff;
 }
+
 .statsStart {
-  position: absolute;
-  top: 20px;
-  left: 0px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
 }
+
 .statsEnd {
-  position: absolute;
-  top: 20px;
-  right: -20px;
+    position: absolute;
+    top: 20px;
+    right: -20px;
 }
+
 .percentage {
-  color: #9ebbff;
+    color: #9ebbff;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+
 }

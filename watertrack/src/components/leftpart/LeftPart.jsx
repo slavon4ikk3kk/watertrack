@@ -15,7 +15,7 @@ const LeftPart = () => {
                     </div>
                 </div>
             </div>
-            <ProgressBar percent={200}></ProgressBar>
+            <ProgressBar percent={50}></ProgressBar>
         </div>
     )
 }
