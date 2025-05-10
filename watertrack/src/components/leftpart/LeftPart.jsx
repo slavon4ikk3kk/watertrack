@@ -15,7 +15,13 @@ const LeftPart = () => {
                     </div>
                 </div>
             </div>
-            <ProgressBar percent={50}></ProgressBar>
+            <div className={s.bottom}>
+                <ProgressBar percent={50}></ProgressBar>
+                <button className={s.button}>
+                    <img src={images.outline} />
+                    <p>Add Water</p>
+                </button>
+            </div>
         </div>
     )
 }

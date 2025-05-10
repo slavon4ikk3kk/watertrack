@@ -42,3 +42,16 @@
      line-height: 24px;
      margin-bottom: 12px;
 }
+.bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 23px;
+}
+.button{
+  background-color: #407BFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}

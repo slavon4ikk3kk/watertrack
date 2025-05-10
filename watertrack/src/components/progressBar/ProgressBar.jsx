@@ -2,8 +2,8 @@ import React from "react";
 import s from "./ProgressBar.module.css";
 const ProgressBar = ({ percent }) => {
   return (
-    <div>
-      <div>
+    
+      <div style={{flexGrow: "1"}}>
         <p className={s.today}>Today</p>
         <div className={s.progressBar}>
           <p className={s.statsStart}>0%</p>
@@ -22,7 +22,7 @@ const ProgressBar = ({ percent }) => {
           </div>
         </div>
       </div>
-    </div>
+
   );
 };
 
