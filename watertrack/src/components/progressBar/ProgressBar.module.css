@@ -1,43 +1,45 @@
-.progressBar{
-     height: 8px;
-     background-color: #D7E3FF;
-     border-radius: 10px;
-     position: relative;
-
+.progressBar {
+  height: 8px;
+  background-color: #d7e3ff;
+  border-radius: 10px;
+  position: relative;
 }
-.track{
-    background-color: #9EBBFF;
-    height: 8px;
-    border-radius: 10px;
-    position: relative;
-    top: 0;
-    left: 0;
+.track {
+  background-color: #9ebbff;
+  height: 8px;
+  border-radius: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
 }
-.circle{
-width: 14px;
-height: 14px;
-border: 1px solid #407BFF;
-border-radius: 50%;
-background-color: #FFFFFF;
-position: absolute;
-top: 50%;
-right: 0;
-transform: translate(50%, -50%);
+.circle {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #407bff;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
 }
-.today{
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-letter-spacing: 0%;
-color: #407BFF;
+.today {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #407bff;
 }
-.statsStart{
-    position: absolute;
-    top: 20px;
-    left: 0;
+.statsStart {
+  position: absolute;
+  top: 20px;
+  left: 0px;
 }
-.statsEnd{
-    position: absolute;
-    top: 20px;
-    right: 10px;
+.statsEnd {
+  position: absolute;
+  top: 20px;
+  right: -20px;
+}
+.percentage {
+  color: #9ebbff;
 }
