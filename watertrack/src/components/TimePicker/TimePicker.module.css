@@ -1,14 +1,11 @@
-.custom-input {
+.customInput {
   padding: 10px;
   font-size: 18px;
   border: 2px solid #007bff;
   border-radius: 8px;
-  color: #2c3e50;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.flatpickr-time input {
-  color: #e91e63 !important; /* годинник – червоний */
-  font-weight: bold;
+  width: 200px;
+  color: #407bff;
+  background: none !important;
+  background-image: none !important;
+  color: blue !important;
 }
