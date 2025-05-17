@@ -5,7 +5,7 @@ import s from "./Cabinet.module.css";
 import RightPart from "../components/rightpart/RightPart";
 const Cabinet = () => {
   return (
-    <div>
+    <div className={s.mainPage}>
     <div className={s.container}>
       <Header />
       <div className={s.mainWrap}>
