@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import s from "./AddWater.module.css";
 import images from "../../assets/index.js";
 import TimePicker from "../TimePicker/TimePicker.jsx";
-const AddWater = ({setShowAddWater}) => {
+const AddWater = ({ setShowAddWater }) => {
   const [time, setTime] = useState(null);
   const [amount, setAmount] = useState(50);
   function handleInputChange(e) {
@@ -20,14 +20,24 @@ const AddWater = ({setShowAddWater}) => {
     }
     setAmount(amount - 50);
   }
-  
-  
+
+  function closeModal(e) {
+    if (e.currentTarget === e.target) {
+      setShowAddWater(false);
+    }
+  }
   return (
-    <div className={s.overlay} onClick={()=>{setShowAddWater(false)}}>
+    <div className={s.overlay} onClick={closeModal}>
       <div className={s.mainModal}>
         <div className={s.head}>
           <p className={s.title}>Add Water</p>
-          <img src={images.close} onClick={()=>{setShowAddWater(false)}} className={s.close}></img>
+          <img
+            src={images.close}
+            onClick={() => {
+              setShowAddWater(false);
+            }}
+            className={s.close}
+          ></img>
         </div>
         <p style={{ marginBottom: "12px" }}>Choose a value:</p>
         <p>Amount of water:</p>
