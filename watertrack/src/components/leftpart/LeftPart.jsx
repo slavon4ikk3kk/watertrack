@@ -36,7 +36,7 @@ const LeftPart = () => {
           <p>Add Water</p>
         </button>
 
-        {showAddWater && <AddWater onClose={handleClose} />}
+        {showAddWater && <AddWater onClose={handleClose} setShowAddWater={setShowAddWater} />}
       </div>
     </div>
   );

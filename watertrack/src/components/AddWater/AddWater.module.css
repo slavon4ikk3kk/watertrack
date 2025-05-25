@@ -11,7 +11,9 @@
   top: 0;
   left: 0;
 }
-
+.close{
+    cursor: pointer;
+}
 .mainModal {
   position: absolute;
   border-radius: 10px;
