@@ -26,9 +26,9 @@ const AddWater = () => {
       <p style={{ marginBottom: "12px" }}>Recording time:</p>
       <TimePicker value={time} onChange={setTime} />
       <p className={s.p}>Enter the value of the water used:</p>
-      <input type="number"></input>
+      <input type="number" className={s.numberInput}></input>
       <div className={s.save}>
-        <p>50ml</p>
+        <p className={s.chosedAmount}>50ml</p>
         <button className={s.buttonSave}>Save</button>
       </div>
     </div>
