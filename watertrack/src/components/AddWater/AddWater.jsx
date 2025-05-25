@@ -5,20 +5,20 @@ import TimePicker from "../TimePicker/TimePicker.jsx";
 const AddWater = () => {
   const [time, setTime] = useState(null);
   const [amount, setAmount] = useState(50);
-  function handleInputChange(e){
+  function handleInputChange(e) {
     setAmount(+e.target.value);
   }
-  function handleIncrementChange(){
-    if(amount === 5000){
-      return
+  function handleIncrementChange() {
+    if (amount === 5000) {
+      return;
     }
-    setAmount(amount + 50)
+    setAmount(amount + 50);
   }
-  function handleDecrementChange(){
-    if(amount === 50){ 
-      return
+  function handleDecrementChange() {
+    if (amount === 50) {
+      return;
     }
-    setAmount(amount - 50)
+    setAmount(amount - 50);
   }
   return (
     <div className={s.overlay}>
@@ -43,7 +43,13 @@ const AddWater = () => {
         <p style={{ marginBottom: "12px" }}>Recording time:</p>
         <TimePicker value={time} onChange={setTime} />
         <p className={s.p}>Enter the value of the water used:</p>
-        <input type="number" className={s.numberInput} onChange={handleInputChange} value={amount}></input>
+        <input
+          min={"50"}
+          type="number"
+          className={s.numberInput}
+          onChange={handleInputChange}
+          value={amount}
+        ></input>
         <div className={s.save}>
           <p className={s.chosedAmount}>{amount}ml</p>
           <button className={s.buttonSave}>Save</button>

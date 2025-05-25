@@ -61,12 +61,13 @@
   display: flex;
   justify-content: flex-end;
   gap: 24px;
+  margin-top: 24px;
   align-items: center;
 }
 
 .inputTime {
   margin-bottom: 12px;
-  width: 100%;
+  width: 90%;
   color: #407bff;
   outline: none;
 }
@@ -110,7 +111,7 @@
   font-size: 18px;
   border: 2px solid #d7e3ff;
   border-radius: 8px;
-  width: 200px;
+  width: 90%;
   color: #407bff !important;
   outline: none;
 }
