@@ -47,6 +47,7 @@
   justify-content: center;
   background-color: transparent;
   box-shadow: 0px 2px 4px 0px #407bff33;
+  cursor: pointer;
 }
 
 .amountWater {
@@ -60,6 +61,7 @@
   display: flex;
   justify-content: flex-end;
   gap: 24px;
+  align-items: center;
 }
 
 .inputTime {
