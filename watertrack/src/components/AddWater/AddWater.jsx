@@ -5,31 +5,33 @@ import TimePicker from "../TimePicker/TimePicker.jsx";
 const AddWater = () => {
   const [time, setTime] = useState(null);
   return (
-    <div className={s.mainModal}>
-      <div className={s.head}>
-        <p className={s.title}>Add Water</p>
-        <img src={images.close}></img>
-      </div>
-      <p style={{ marginBottom: "12px" }}>Choose a value:</p>
-      <p>Amount of water:</p>
-      <div className={s.amountWater}>
-        <button className={s.controlButton}>
-          <img src={images.minus}></img>
-        </button>
-        <div className={s.amount}>
-          <p className={s.amountP}>50ml</p>
+    <div className={s.overlay}>
+      <div className={s.mainModal}>
+        <div className={s.head}>
+          <p className={s.title}>Add Water</p>
+          <img src={images.close}></img>
         </div>
-        <button className={s.controlButton}>
-          <img src={images.plus}></img>
-        </button>
-      </div>
-      <p style={{ marginBottom: "12px" }}>Recording time:</p>
-      <TimePicker value={time} onChange={setTime} />
-      <p className={s.p}>Enter the value of the water used:</p>
-      <input type="number" className={s.numberInput}></input>
-      <div className={s.save}>
-        <p className={s.chosedAmount}>50ml</p>
-        <button className={s.buttonSave}>Save</button>
+        <p style={{ marginBottom: "12px" }}>Choose a value:</p>
+        <p>Amount of water:</p>
+        <div className={s.amountWater}>
+          <button className={s.controlButton}>
+            <img src={images.minus}></img>
+          </button>
+          <div className={s.amount}>
+            <p className={s.amountP}>50ml</p>
+          </div>
+          <button className={s.controlButton}>
+            <img src={images.plus}></img>
+          </button>
+        </div>
+        <p style={{ marginBottom: "12px" }}>Recording time:</p>
+        <TimePicker value={time} onChange={setTime} />
+        <p className={s.p}>Enter the value of the water used:</p>
+        <input type="number" className={s.numberInput}></input>
+        <div className={s.save}>
+          <p className={s.chosedAmount}>50ml</p>
+          <button className={s.buttonSave}>Save</button>
+        </div>
       </div>
     </div>
   );

@@ -1,122 +1,135 @@
 .head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000cc;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .mainModal {
-    position: absolute;
-    border: 1px solid black;
-    background-color: white;
-    top: 50%;
-    left: 50%;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    width: 592px;
-    height: auto;
-    transform: translate(-50%, -50%);
-    padding: 32px 24px;
-
+  position: absolute;
+  border-radius: 10px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  width: 592px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  padding: 32px 24px;
 }
 
 .title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 32px;
-    margin-bottom: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  margin-bottom: 24px;
 }
 
 .controlButton {
-    border: 1px solid #9EBBFF;
-    border-radius: 50%;
-    display: block;
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    box-shadow: 0px 2px 4px 0px #407BFF33;
-
+  border: 1px solid #9ebbff;
+  border-radius: 50%;
+  display: block;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  box-shadow: 0px 2px 4px 0px #407bff33;
 }
 
 .amountWater {
-    display: flex;
-    align-items: center;
-    gap: 17px;
-    margin: 12px 0 24px 0;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin: 12px 0 24px 0;
 }
 
 .save {
-    display: flex;
-    justify-content: flex-end;
-    gap: 24px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
 }
 
 .inputTime {
-    margin-bottom: 12px;
-    width: 100%;
-    color: #407BFF;
+  margin-bottom: 12px;
+  width: 100%;
+  color: #407bff;
+  outline: none;
 }
 
 .p {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .buttonSave {
-    width: 160px;
-    height: auto;
-    border-radius: 10px;
-    padding: 10px 30px;
-    gap: 10px;
-    background-color: #407BFF;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    color: white;
+  width: 160px;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px 30px;
+  gap: 10px;
+  background-color: #407bff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: white;
 }
 
 .amount {
-    padding: 6px 10px;
-    border-radius: 40px;
-    background-color: #D7E3FF;
-    gap: 10px;
+  padding: 6px 10px;
+  border-radius: 40px;
+  background-color: #d7e3ff;
+  gap: 10px;
 }
 
 .amountP {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    color: #407BFF;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #407bff;
 }
-.numberInput{
+.numberInput {
   padding: 10px;
   font-size: 18px;
-  border: 2px solid #007bff;
+  border: 2px solid #d7e3ff;
   border-radius: 8px;
   width: 200px;
-  color: blue !important;
+  color: #407bff !important;
+  outline: none;
 }
-.chosedAmount{
-font-family: "Roboto", sans-serif;
-font-weight: 700;
-font-size: 18px;
-text-align: center;
-color: #407BFF;
+.numberInput:focus,
+.inputTime {
+  border: 2px solid #407bff;
 }
-.modalWrap{   
-font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-letter-spacing: 0%;
-width: 400px;
-height: 400px;
+
+.chosedAmount {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #407bff;
+}
+.modalWrap {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  width: 400px;
+  height: 400px;
 }
