@@ -1,0 +1,41 @@
+.transactionsList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+.rightSide {
+    display: flex;
+    align-items: flex-end;
+    gap: 18px;
+}
+
+.leftSide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.amount {
+    color: #407BFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.currentDay {
+    padding-bottom: 16px;
+    padding-top: 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.time {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #2F2F2F;
+}
