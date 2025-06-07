@@ -79,7 +79,7 @@ const AddWater = ({ setShowAddWater, setActionList }) => {
         <div>
           <p style={{ marginBottom: "12px" }}>Recording time:</p>
           <TimePicker value={time} onChange={setTime} />
-          <p className={s.timeError}>{timeError}</p>
+          {time === null && <p className={s.timeError}>{timeError}</p>}
         </div>
         <p className={s.p}>Enter the value of the water used:</p>
         <input
