@@ -24,7 +24,7 @@ const TimePicker = ({ value, onChange }) => {
 
   return (
     <input
-      required="true"
+      required={true}
       type="text"
       ref={inputRef}
       className={s.customInput}

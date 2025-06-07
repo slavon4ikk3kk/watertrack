@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
-import s from './LeftPart.module.css';
-import images from '../../assets/index.js';
-import ProgressBar from '../progressBar/ProgressBar.jsx';
-import AddWater from '../AddWater/AddWater.jsx';
+import React, { useState } from "react";
+import s from "./LeftPart.module.css";
+import images from "../../assets/index.js";
+import ProgressBar from "../progressBar/ProgressBar.jsx";
+import AddWater from "../AddWater/AddWater.jsx";
 
-const LeftPart = ({showAddWater, setShowAddWater, setActionList}) => {
-  
-
+const LeftPart = ({ showAddWater, setShowAddWater, setActionList }) => {
   function handleClick() {
     setShowAddWater(true);
   }
@@ -36,7 +34,13 @@ const LeftPart = ({showAddWater, setShowAddWater, setActionList}) => {
           <p>Add Water</p>
         </button>
 
-        {showAddWater && <AddWater onClose={handleClose} setShowAddWater={setShowAddWater} setActionList={setActionList}/>}
+        {showAddWater && (
+          <AddWater
+            onClose={handleClose}
+            setShowAddWater={setShowAddWater}
+            setActionList={setActionList}
+          />
+        )}
       </div>
     </div>
   );

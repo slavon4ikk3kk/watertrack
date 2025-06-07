@@ -83,7 +83,7 @@ const AddWater = ({ setShowAddWater, setActionList }) => {
         </div>
         <p className={s.p}>Enter the value of the water used:</p>
         <input
-          required="true"
+          required={true}
           min={"50"}
           type="number"
           className={s.numberInput}

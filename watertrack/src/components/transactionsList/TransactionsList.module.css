@@ -1,50 +1,53 @@
-.transactionList{
-    height: 175px;
-    overflow: scroll;
-    scrollbar-width: none;  
+.transactionList {
+  height: 175px;
+  overflow: scroll;
+  scrollbar-width: none;
 }
-.transactionList::-webkit-scrollbar{
-  display: none;                 
+.transactionList::-webkit-scrollbar {
+  display: none;
 }
 .transactionWrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #D7E3FF;
-    margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d7e3ff;
+  margin-top: 12px;
 }
 
 .rightSide {
-    display: flex;
-    align-items: flex-end;
-    gap: 18px;
+  display: flex;
+  align-items: flex-end;
+  gap: 18px;
 }
 
 .leftSide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
 .amount {
-    color: #407BFF;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+  color: #407bff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .currentDay {
-    margin-bottom: 16px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 26px;
+  margin-bottom: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
 }
 
 .time {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    color: #2F2F2F;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #2f2f2f;
+}
+.control {
+  cursor: pointer;
 }

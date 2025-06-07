@@ -5,13 +5,13 @@ import dateFormat from "dateformat";
 const TransactionsList = ({ actionList, setActionList }) => {
   const date = new Date();
   const formattedDate = dateFormat(date, "dddd, mmmm dS");
-  function onDelete(id){
-      setActionList((prev)=>{
-          const newList = actionList.filter((action)=>{
-            return action.id === id
-          })
-          return newList
-      }) 
+  function onDelete(id) {
+    setActionList((prev) => {
+      const newList = prev.filter((action) => {
+        return action.id !== id;
+      });
+      return newList;
+    });
   }
   return (
     <div className={s.main}>
@@ -26,8 +26,14 @@ const TransactionsList = ({ actionList, setActionList }) => {
                 <p className={s.time}>{dateFormat(action.time, " h:MM TT")}</p>
               </div>
               <div className={s.rightSide}>
-                <img src={images.pencil}></img>
-                <img src={images.trash} onClick={onDelete(action.id)}></img>
+                <img className={s.control} src={images.pencil}></img>
+                <img
+                  className={s.control}
+                  src={images.trash}
+                  onClick={() => {
+                    onDelete(action.id);
+                  }}
+                ></img>
               </div>
             </li>
           );
