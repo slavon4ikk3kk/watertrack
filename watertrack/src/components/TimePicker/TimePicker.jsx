@@ -24,11 +24,11 @@ const TimePicker = ({ value, onChange }) => {
 
   return (
     <input
+      required="true"
       type="text"
       ref={inputRef}
       className={s.customInput}
       placeholder="Оберіть час"
-      readOnly
     />
   );
 };
