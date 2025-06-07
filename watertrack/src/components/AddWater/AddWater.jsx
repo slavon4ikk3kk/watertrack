@@ -4,7 +4,7 @@ import images from "../../assets/index.js";
 import TimePicker from "../TimePicker/TimePicker.jsx";
 import { v4 as uuidv4 } from "uuid";
 
-const AddWater = ({ setShowAddWater, setActionList }) => {
+const AddWater = ({ setShowAddWater, setActionList, actionData }) => {
   const [time, setTime] = useState(null);
   const [amount, setAmount] = useState(50);
   const [timeError, settimeError] = useState("");
