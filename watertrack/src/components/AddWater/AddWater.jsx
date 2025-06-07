@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import s from "./AddWater.module.css";
 import images from "../../assets/index.js";
 import TimePicker from "../TimePicker/TimePicker.jsx";
-const AddWater = ({ setShowAddWater }) => {
+import {v4 as uuidv4} from "uuid";
+
+const AddWater = ({ setShowAddWater, setActionList }) => {
   const [time, setTime] = useState(null);
   const [amount, setAmount] = useState(50);
   function handleInputChange(e) {
@@ -26,9 +28,17 @@ const AddWater = ({ setShowAddWater }) => {
       setShowAddWater(false);
     }
   }
+  function handleSubmit(e){
+     e.preventDefault();
+     const newAction = {amount, time, id: uuidv4() }
+     setActionList((prev)=> {
+      return [...prev, newAction] 
+     })
+     setShowAddWater(false)
+  }
   return (
     <div className={s.overlay} onClick={closeModal}>
-      <div className={s.mainModal}>
+      <form className={s.mainModal} onSubmit={handleSubmit}>
         <div className={s.head}>
           <p className={s.title}>Add Water</p>
           <img
@@ -42,13 +52,13 @@ const AddWater = ({ setShowAddWater }) => {
         <p style={{ marginBottom: "12px" }}>Choose a value:</p>
         <p>Amount of water:</p>
         <div className={s.amountWater}>
-          <button className={s.controlButton} onClick={handleDecrementChange}>
+          <button className={s.controlButton} onClick={handleDecrementChange} type="button">
             <img src={images.minus}></img>
           </button>
           <div className={s.amount}>
             <p className={s.amountP}>{amount}ml</p>
           </div>
-          <button className={s.controlButton} onClick={handleIncrementChange}>
+          <button className={s.controlButton} onClick={handleIncrementChange} type="button">
             <img src={images.plus}></img>
           </button>
         </div>
@@ -64,9 +74,9 @@ const AddWater = ({ setShowAddWater }) => {
         ></input>
         <div className={s.save}>
           <p className={s.chosedAmount}>{amount}ml</p>
-          <button className={s.buttonSave}>Save</button>
+          <button className={s.buttonSave} type="submit">Save</button>
         </div>
-      </div>
+      </form>
     </div>
   );
 };

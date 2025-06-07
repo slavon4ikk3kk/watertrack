@@ -4,8 +4,8 @@ import images from '../../assets/index.js';
 import ProgressBar from '../progressBar/ProgressBar.jsx';
 import AddWater from '../AddWater/AddWater.jsx';
 
-const LeftPart = () => {
-  const [showAddWater, setShowAddWater] = useState(false);
+const LeftPart = ({showAddWater, setShowAddWater, setActionList}) => {
+  
 
   function handleClick() {
     setShowAddWater(true);
@@ -36,7 +36,7 @@ const LeftPart = () => {
           <p>Add Water</p>
         </button>
 
-        {showAddWater && <AddWater onClose={handleClose} setShowAddWater={setShowAddWater} />}
+        {showAddWater && <AddWater onClose={handleClose} setShowAddWater={setShowAddWater} setActionList={setActionList}/>}
       </div>
     </div>
   );

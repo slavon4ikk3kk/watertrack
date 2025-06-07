@@ -6,9 +6,9 @@ import plus from "./plus.svg"
 import glass from "./glass.svg"
 import pencil from "./pencil.svg"
 import trash from "./trash.svg"
-
+import plusButton from "./plusButton.svg"
 
 
 export default {
-    bottleHomePage, outline, close, minus, plus, glass, pencil, trash
+    bottleHomePage, outline, close, minus, plus, glass, pencil, trash, plusButton
 };
