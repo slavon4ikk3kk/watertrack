@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import s from "./AddWater.module.css";
 import images from "../../assets/index.js";
 import TimePicker from "../TimePicker/TimePicker.jsx";
@@ -6,8 +6,14 @@ import { v4 as uuidv4 } from "uuid";
 
 const AddWater = ({ setShowAddWater, setActionList, actionData }) => {
   const [time, setTime] = useState(null);
-  const [amount, setAmount] = useState(actionData ? actionData.amount : 50);
+  const [amount, setAmount] = useState(() => {
+    if (actionData) {
+      return actionData.amount;
+    }
+    return 50;
+  });
   const [timeError, settimeError] = useState("");
+  console.log(amount);
   function handleInputChange(e) {
     setAmount(+e.target.value);
   }
@@ -29,6 +35,12 @@ const AddWater = ({ setShowAddWater, setActionList, actionData }) => {
       setShowAddWater(false);
     }
   }
+  useEffect(() => {
+    if (actionData) {
+      setAmount(actionData.amount);
+      setTime(actionData.time);
+    }
+  }, [actionData]);
   function handleSubmit(e) {
     e.preventDefault();
     settimeError("");
@@ -42,8 +54,6 @@ const AddWater = ({ setShowAddWater, setActionList, actionData }) => {
     });
     setShowAddWater(false);
   }
-
-  
 
   return (
     <div className={s.overlay} onClick={closeModal}>
