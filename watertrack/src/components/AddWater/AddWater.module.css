@@ -75,7 +75,8 @@
 }
 
 .p {
-  margin-bottom: 16px;
+  margin-top: 20px;
+
 }
 
 .buttonSave {
@@ -116,6 +117,7 @@
   width: 90%;
   color: #407bff !important;
   outline: none;
+  margin-top: 10px;
 }
 .numberInput:focus,
 .inputTime {
@@ -137,4 +139,16 @@
   letter-spacing: 0%;
   width: 400px;
   height: 400px;
+}
+.timeError{
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  padding-top: 24px;
+  color: red;
+}
+.timeWrap{
+  position: relative;
+  top: 0;
+  left: 0;
 }

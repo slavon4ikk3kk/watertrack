@@ -19,4 +19,7 @@
 }
 .button{
   cursor: pointer;
+  display: flex;
+  color: #407BFF;
+  gap: 8px;
 }

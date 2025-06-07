@@ -13,8 +13,8 @@ const RightPart = ({setShowAddWater, actionList, setActionList}) => {
         <div className={s.buttonWrap}>
           <button onClick={openModal} className={s.button}>
             <img src={images.plusButton} />
+            <p>Add water</p>
           </button>
-          <p>Add water</p>
         </div>
       </div>
     </div>

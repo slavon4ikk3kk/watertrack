@@ -76,7 +76,7 @@ const AddWater = ({ setShowAddWater, setActionList }) => {
             <img src={images.plus}></img>
           </button>
         </div>
-        <div>
+        <div className={s.timeWrap}>
           <p style={{ marginBottom: "12px" }}>Recording time:</p>
           <TimePicker value={time} onChange={setTime} />
           {time === null && <p className={s.timeError}>{timeError}</p>}
