@@ -4,7 +4,7 @@ import images from "../../assets/index.js";
 import ProgressBar from "../progressBar/ProgressBar.jsx";
 import AddWater from "../AddWater/AddWater.jsx";
 
-const LeftPart = ({ showAddWater, setShowAddWater, setActionList }) => {
+const LeftPart = ({ showAddWater, setShowAddWater, setActionList, currentEditObject }) => {
   function handleClick() {
     setShowAddWater(true);
   }
@@ -39,6 +39,7 @@ const LeftPart = ({ showAddWater, setShowAddWater, setActionList }) => {
             onClose={handleClose}
             setShowAddWater={setShowAddWater}
             setActionList={setActionList}
+            currentEditObject={currentEditObject}
           />
         )}
       </div>

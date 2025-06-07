@@ -5,6 +5,7 @@ import s from "./Cabinet.module.css";
 import RightPart from "../components/rightpart/RightPart";
 const Cabinet = () => {
   const [showAddWater, setShowAddWater] = useState(false);
+  const [currentEditObject, setcurrentEditObject] = useState(null);
   const [actionList, setActionList] = useState(() => {
     const ls = JSON.parse(localStorage.getItem("actionList"))
     if(ls){
@@ -22,8 +23,8 @@ const Cabinet = () => {
     <div className={s.container}>
       <Header />
       <div className={s.mainWrap}>
-        <LeftPart showAddWater={showAddWater} setShowAddWater={setShowAddWater} actionList={actionList} setActionList={setActionList}/>
-        <RightPart showAddWater={showAddWater} setShowAddWater={setShowAddWater} actionList={actionList} setActionList={setActionList}/>
+        <LeftPart showAddWater={showAddWater} setShowAddWater={setShowAddWater} actionList={actionList} setActionList={setActionList} currentEditObject={currentEditObject}/>
+        <RightPart showAddWater={showAddWater} setShowAddWater={setShowAddWater} actionList={actionList} setActionList={setActionList} setcurrentEditObject={setcurrentEditObject}/>
       </div>
     </div>
     </div>

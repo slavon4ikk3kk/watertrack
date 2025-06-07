@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const AddWater = ({ setShowAddWater, setActionList, actionData }) => {
   const [time, setTime] = useState(null);
-  const [amount, setAmount] = useState(50);
+  const [amount, setAmount] = useState(actionData ? actionData.amount : 50);
   const [timeError, settimeError] = useState("");
   function handleInputChange(e) {
     setAmount(+e.target.value);
@@ -42,6 +42,9 @@ const AddWater = ({ setShowAddWater, setActionList, actionData }) => {
     });
     setShowAddWater(false);
   }
+
+  
+
   return (
     <div className={s.overlay} onClick={closeModal}>
       <form className={s.mainModal} onSubmit={handleSubmit}>

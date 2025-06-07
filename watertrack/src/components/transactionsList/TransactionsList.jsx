@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import s from "./TransactionsList.module.css";
 import images from "../../assets/index.js";
 import dateFormat from "dateformat";
-const TransactionsList = ({ actionList, setActionList }) => {
+const TransactionsList = ({ actionList, setActionList, setcurrentEditObject, setShowAddWater }) => {
   const date = new Date();
   const formattedDate = dateFormat(date, "dddd, mmmm dS");
   function onDelete(id) {
@@ -12,6 +12,11 @@ const TransactionsList = ({ actionList, setActionList }) => {
       });
       return newList;
     });
+  }
+  function onEdit(editObject){
+    setcurrentEditObject(editObject);
+    setShowAddWater(true);
+    
   }
   return (
     <div className={s.main}>
@@ -26,7 +31,7 @@ const TransactionsList = ({ actionList, setActionList }) => {
                 <p className={s.time}>{dateFormat(action.time, " h:MM TT")}</p>
               </div>
               <div className={s.rightSide}>
-                <img className={s.control} src={images.pencil}></img>
+                <img className={s.control} src={images.pencil} onClick={()=>{onEdit(action)}}></img>
                 <img
                   className={s.control}
                   src={images.trash}
