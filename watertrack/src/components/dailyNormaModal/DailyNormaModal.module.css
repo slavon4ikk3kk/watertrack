@@ -1,0 +1,55 @@
+.overlay{
+    background-color: #000000CC;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal{
+    background-color: white;
+    width: 592px;
+    padding: 32px 24px;
+}
+.label{
+    display: flex;
+    justify-content: space-between;
+}
+.formulas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.comment{
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0%;
+color: #8F8F8F;
+}
+.formula{
+font-size: 18px;
+line-height: 24px;
+color: #407BFF;
+}
+.gender{
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0%;
+color: #2F2F2F;
+}
+.title{
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 26px;
+line-height: 32px;
+color: #2F2F2F;
+margin-bottom: 24px;
+}

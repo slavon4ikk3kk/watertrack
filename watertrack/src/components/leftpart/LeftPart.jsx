@@ -3,10 +3,13 @@ import s from "./LeftPart.module.css";
 import images from "../../assets/index.js";
 import ProgressBar from "../progressBar/ProgressBar.jsx";
 import AddWater from "../AddWater/AddWater.jsx";
+import DailyNormaModal from "../dailyNormaModal/DailyNormaModal.jsx";
 
 const LeftPart = ({
   showAddWater,
   setShowAddWater,
+  setShowDailyNorma,
+  showDailyNorma,
   setActionList,
   currentEditObject,
 }) => {
@@ -17,7 +20,9 @@ const LeftPart = ({
   function handleClose() {
     setShowAddWater(false);
   }
-
+  function handleOpenDailyNorma() {
+    setShowDailyNorma(true)
+  }
   return (
     <div>
       <div className={s.main}>
@@ -26,7 +31,7 @@ const LeftPart = ({
           <p className={s.normaTitle}>My daily norma</p>
           <div className={s.editBlock}>
             <p className={s.normaAmount}>1.5 L</p>
-            <button className={s.buttonEdit}>Edit</button>
+            <button className={s.buttonEdit} onClick={handleOpenDailyNorma}>Edit</button>
           </div>
         </div>
       </div>
@@ -45,6 +50,12 @@ const LeftPart = ({
             setShowAddWater={setShowAddWater}
             setActionList={setActionList}
             actionData={currentEditObject}
+          />
+        )}
+        {showDailyNorma && (
+          <DailyNormaModal        
+            setShowDailyNorma={setShowDailyNorma}
+            showDailyNorma={showDailyNorma}
           />
         )}
       </div>

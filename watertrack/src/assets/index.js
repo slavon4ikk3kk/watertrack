@@ -7,8 +7,11 @@ import glass from "./glass.svg"
 import pencil from "./pencil.svg"
 import trash from "./trash.svg"
 import plusButton from "./plusButton.svg"
+import logo from "./Logo.svg"
+import profile from "./David.svg"
+import arrow from "./solid.svg"
 
 
 export default {
-    bottleHomePage, outline, close, minus, plus, glass, pencil, trash, plusButton
+    bottleHomePage, outline, close, minus, plus, glass, pencil, trash, plusButton, logo, profile, arrow
 };

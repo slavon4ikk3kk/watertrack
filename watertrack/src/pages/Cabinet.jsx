@@ -4,6 +4,7 @@ import Header from "../components/Header/Header";
 import s from "./Cabinet.module.css";
 import RightPart from "../components/rightpart/RightPart";
 const Cabinet = () => {
+  const [showDailyNorma, setShowDailyNorma] = useState(false);
   const [showAddWater, setShowAddWater] = useState(false);
   const [currentEditObject, setcurrentEditObject] = useState(null);
   const [actionList, setActionList] = useState(() => {
@@ -23,7 +24,7 @@ const Cabinet = () => {
     <div className={s.container}>
       <Header />
       <div className={s.mainWrap}>
-        <LeftPart showAddWater={showAddWater} setShowAddWater={setShowAddWater} actionList={actionList} setActionList={setActionList} currentEditObject={currentEditObject}/>
+        <LeftPart showAddWater={showAddWater} setShowAddWater={setShowAddWater} actionList={actionList} setActionList={setActionList} currentEditObject={currentEditObject} showDailyNorma={showDailyNorma} setShowDailyNorma={setShowDailyNorma}/>
         <RightPart showAddWater={showAddWater} setShowAddWater={setShowAddWater} actionList={actionList} setActionList={setActionList} setcurrentEditObject={setcurrentEditObject}/>
       </div>
     </div>
