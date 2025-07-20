@@ -1,4 +1,4 @@
-.overlay{
+.overlay {
     background-color: #000000CC;
     position: fixed;
     width: 100vw;
@@ -9,47 +9,98 @@
     align-items: center;
     justify-content: center;
 }
-.modal{
+
+.modal {
     background-color: white;
     width: 592px;
     padding: 32px 24px;
 }
-.label{
+
+.label {
     display: flex;
     justify-content: space-between;
 }
-.formulas{
+
+.formulas {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 12px;
 }
-.comment{
-font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0%;
-color: #8F8F8F;
+
+.comment {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: #8F8F8F;
 }
-.formula{
-font-size: 18px;
-line-height: 24px;
-color: #407BFF;
+
+.formula {
+    font-size: 18px;
+    line-height: 24px;
+    color: #407BFF;
 }
-.gender{
-font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-letter-spacing: 0%;
-color: #2F2F2F;
+
+.gender {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #2F2F2F;
 }
-.title{
-font-family: "Roboto", sans-serif;
-font-weight: 500;
-font-size: 26px;
-line-height: 32px;
-color: #2F2F2F;
-margin-bottom: 24px;
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: #2F2F2F;
+    margin-bottom: 24px;
+}
+
+.h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 24px 0 16px 0;
+}
+
+.genderLabel {
+    margin-right: 24px;
+}
+
+.radio {
+    margin-right: 6px;
+}
+
+.label{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 16px 0 8px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input {
+    width: 94%;
+    padding: 12px 10px;
+    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 20px;
+    color: #407BFF;
+    outline: none;
+    border: 1px solid #D7E3FF;
+    display: block;
 }
