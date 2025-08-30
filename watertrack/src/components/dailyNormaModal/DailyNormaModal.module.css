@@ -89,18 +89,3 @@
     flex-direction: column;
     gap: 10px;
 }
-
-.input {
-    width: 94%;
-    padding: 12px 10px;
-    font-family: Roboto;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 16px;
-    line-height: 20px;
-    color: #407BFF;
-    outline: none;
-    border: 1px solid #D7E3FF;
-    display: block;
-}
