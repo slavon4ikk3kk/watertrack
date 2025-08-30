@@ -14,11 +14,16 @@
     background-color: white;
     width: 592px;
     padding: 32px 24px;
+    position: relative;
+    top: 0;
+    right: 0;
 }
 
-.label {
+.labelWeight {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 16px;
 }
 
 .formulas {
@@ -86,6 +91,50 @@
     line-height: 20px;
     margin-top: 16px 0 8px 0;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     gap: 10px;
+}
+.close{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 34px;
+    right: 18px;
+    cursor: pointer;
+}
+.mainInput{
+  display: block;
+  width: 94%;
+  padding: 12px 10px;
+  border-radius: 6px;
+  border: 1px solid #D7E3FF;
+  outline: none;
+}
+.mainInput:hover, .mainInput:focus{
+    border: 1px solid #407bff;
+}
+.button {
+  background-color: #407bff;
+  width: 160px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 30px;
+  border: 1px solid #407bff;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  text-align: right;
+  margin-top: 20px;
+  margin-left: auto;
+}
+.p{
+    margin: 20px 0;
 }

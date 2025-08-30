@@ -12,6 +12,8 @@ const LeftPart = ({
   showDailyNorma,
   setActionList,
   currentEditObject,
+  setDailyNorma,
+  dailyNorma
 }) => {
   function handleClick() {
     setShowAddWater(true);
@@ -30,7 +32,7 @@ const LeftPart = ({
         <div className={s.normaBlock}>
           <p className={s.normaTitle}>My daily norma</p>
           <div className={s.editBlock}>
-            <p className={s.normaAmount}>1.5 L</p>
+            <p className={s.normaAmount}>{dailyNorma} L</p>
             <button className={s.buttonEdit} onClick={handleOpenDailyNorma}>Edit</button>
           </div>
         </div>
@@ -56,6 +58,7 @@ const LeftPart = ({
           <DailyNormaModal        
             setShowDailyNorma={setShowDailyNorma}
             showDailyNorma={showDailyNorma}
+            setDailyNorma={setDailyNorma}
           />
         )}
       </div>
